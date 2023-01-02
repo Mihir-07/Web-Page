@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script  defer src="https://code.jquery.com/jquery-3.5.1.js" > </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <script   defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.js" > </script>
+    <script   defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.js"></script>
+    <script  defer src="./script.js"></script>
+    <script  defer src="./app/common.js"></script>
+
+
+
+    <script>
+      const ADJECTIVES = [
+    'North Korea and Cuba are the only places you cant buy Coca-Cola.',
+    'The entire world s population could fit inside Los Angeles.',
+    'The hottest chili pepper in the world is so hot it could kill you.',
+    'More people visit France than any other country.',
+    'The worlds most densely populated island is the size of two soccer fields.',
+    'The Canary Islands are named after dogs, not birds.',
+    'There are only three countries in the world that don t use the metric system.',
+    'The endangered two-humped Bactrian camel is native to Mongolia',
+    ' The great Genghis Khan is Mongolia’s founding father',
+    'Laos, home to possibly the cheapest alcohol in the world',
+    '“Simply beautiful” is the official Laos tourism slogan',
+    'Mountain Dew is known as "The Alcohol of Oman"',
+    'India never invaded any country in her last 100000 years of history.',
+    'India has the largest number of Post Offices in the world.',
+    'The four religions born in India - Hinduism, Buddhism, Jainism, and Sikhism, are followed by 25% of the worlds population.',
+    'Yoga has its origins in India and has existed for over 5,000 years.',
+    'Turkey is responsible for 75% of the world’s hazelnut exports',
+    'Qatar Airways is the best airline in the world.',
+    'The first ever Christian church was located in Antioch, Turkey',
+    'Doha Airport voted the best in the Middle East.',
+ ]
+
+ function getrandomfact() {
+    const adj = ADJECTIVES[Math.floor(Math.random() * 20)]
+       
+      
+       return `${adj}`
+
+}
+
+    </script>
+
+
+
+
+    <link rel="stylesheet" href="./app/common.css">
+
+   <title>MyBlogs</title>
+</head>
+<body>
+ <div id="navbar"></div>
+ <div id="spa">
+    <section class="hero">
+        <div class="background-image" style="background-image: url(//ld-wp73.template-help.com/wordpress/prod_19731/v1/wp-content/uploads/2018/07/home-slide-bg-1-1.jpg);"></div>
+        <div class="hero-content-area">
+         
+          
+          <button type="button" style=" font-size: 0.2in; color: white;" id="cl" onclick="document.getElementById('fact').innerHTML =getrandomfact()"> DO YOU KNOW </button>
+          <p  style=" margin-top: 20px; background-color: crimson; border: 3mm black solid; color: white; font-size: 0.5in; font-weight: bolder; margin-left: 200px;" id="fact" ></p>
+         
+          <h1>Do You Also Wish to Travel Whole World?</h1>
+         
+           <h3>Scroll Down To Explore</h3>
+           <form >
+            <div class="form-group">
+              <label class="ema" for="exampleInputEmail1">Email address</label>
+              <input placeholder="Email ID...For Daily Newsletter" type="email" class=" box form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+            </div>
+            <button type="submit" class=" butto btn btn-success">Submit</button>
+           </form>
+      </section>
+    
+
+
+
+
+
+
+ </div>
+     
+ <div  class="background-image" style="background-image: url(//ld-wp73.template-help.com/wordpress/prod_19731/v1/wp-content/uploads/2018/07/home-slide-bg-1-1.jpg);"  id="content">
+     
+ </div>
+ <div id="footer"></div>  
+ 
+</body>
+</html>
+
+4

@@ -1,0 +1,28 @@
+<div class="container my-5">
+    <h1 class="h1 text-center" style="color: wheat;"> WRITE POSTS</h1>
+
+     <form action="/api/posts" method="POST">
+      <div style="color: white;" class="form-group font-weight-bold">
+        <label for="exampleInputPassword1">USER ID</label>
+        <input type="number" class="form-control" id="exampleInputPassword1" name="userid" placeholder="Only in Number">
+      </div>
+        <div style="color: white;" class="form-group font-weight-bold ">
+          <label for="exampleInputEmail1">DESTINATION</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="title" placeholder="Place where you have been to recently"> </input>
+           <small id="emailHelp" class="form-text text-muted">Not the country......Just the place</small>
+        </div>
+       
+        <div style="color: white;" class="form-group font-weight-bold">
+          <label for="exampleFormControlTextarea1">EXPERIENCES</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" name="body" rows="3"></textarea>
+        </div>
+        <div style="color: white;" class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Make This post Public 🌏</label>
+        </div>
+        <button type="submit" class="btn btn-success"> GO! </button>
+      </form> 
+    
+</div>
+
+<script src="/app/write-posts.js"></script>
